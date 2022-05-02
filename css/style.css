@@ -18,47 +18,30 @@
     box-sizing: border-box;
 }
 
-main{
-    font-family: var(--fontN);
-    background-image: url("img/twitter.png");
-    width:100vw;
-    
-}
-
-main h1{
-    padding-top: 30px;
-    font-family: var(--fontT);
-    text-align: center;
-    font-size: 3em;
-}
-
-main h2{
-    font-family: var(--fontT);
-    text-align: center;
-    font-size: 2em;
-}
-
 header{
-    background-image: linear-gradient(to right, var(--corBege), #f0c754ba);
     width: 100%;
-    display: flex;
     justify-content: space-around;
     align-items: center;
     box-shadow: 0px 3px 3px #17130784;
     font-family: var(--fontN);
     font-size: 1em;
+    width: 100%;
 }
 
 header > nav{
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     padding: 5px;
+    background-image: linear-gradient(to right, var(--corBege), #f0c754ba);
 }
 
 header > nav ul{
     display: flex;
     list-style: none;
     font-size: 1.2em;
-    gap: 3rem;
+    font-weight: 400;
 }
 
 header > nav > ul > li > a:hover{
@@ -75,6 +58,48 @@ header > nav > ul > li > a{
     color: var(--corEscura);
     font-weight: bold;
     padding: 10px 20px;
-    gap: 30%;
 }
 
+header .tit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    display: block;
+    background-image: url("/img/amendoim.jpg");
+    background-position: center center;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .tit .title{
+   text-align: center;
+   font-family: var(--fontT);
+   color: white;
+   text-shadow: 1px -1px 7px black;
+}
+
+header .tit .title h1{
+    font-size: 3rem;
+}
+
+main{
+    font-family: var(--fontN);
+
+}
+
+main h1{
+    padding-top: 30px;
+    font-family: var(--fontT);
+    text-align: center;
+    font-size: 3em;
+}
+
+main h2{
+    font-family: var(--fontT);
+    text-align: center;
+    font-size: 2em;
+}
