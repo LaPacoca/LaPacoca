@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap');
+
+:root{
+    --corLaranja: #f25c05;
+    --corBege: #fcca46;
+    --corEscura: #0d0d0d;
+    --corAzul: #92e5e6;
+
+    --fontT: 'Oleo Script Swash Caps', cursive;
+    --fontN: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    font-family: var(--fontN);
+    background-image: url("img/twitter.png");
+    width:100vw;
+    
+}
+
+main h1{
+    padding-top: 30px;
+    font-family: var(--fontT);
+    text-align: center;
+    font-size: 3em;
+}
+
+main h2{
+    font-family: var(--fontT);
+    text-align: center;
+    font-size: 2em;
+}
+
+header{
+    background-image: linear-gradient(to right, var(--corBege), #f0c754ba);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 3px 3px #17130784;
+    font-family: var(--fontN);
+    font-size: 1em;
+}
+
+header > nav{
+    display: flex;
+    padding: 5px;
+}
+
+header > nav ul{
+    display: flex;
+    list-style: none;
+    font-size: 1.2em;
+    gap: 3rem;
+}
+
+header > nav > ul > li > a:hover{
+    background-color: var(--corLaranja);
+    color: var(--corAzul);
+    transition: .4s;
+    border-radius: 3px;
+    text-decoration: underline;
+}
+
+
+header > nav > ul > li > a{
+    text-decoration: none;
+    color: var(--corEscura);
+    font-weight: bold;
+    padding: 10px 20px;
+    gap: 30%;
+}
+
