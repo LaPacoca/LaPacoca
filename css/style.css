@@ -66,7 +66,7 @@ header .tit{
     align-items: center;
     justify-items: center;
     display: block;
-    background-image: url("img/amendoim.jpg");
+    background-image: url("../img/amendoim.jpg");
     background-position: center center;
     height: 300px;
     width: 100%;
