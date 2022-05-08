@@ -20,12 +20,9 @@
 
 header{
     width: 100%;
-    justify-content: space-around;
     align-items: center;
     box-shadow: 0px 3px 3px #17130784;
     font-family: var(--fontN);
-    font-size: 1em;
-    width: 100%;
 }
 
 header > nav{
@@ -33,31 +30,35 @@ header > nav{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 5px;
-    background-image: linear-gradient(to right, var(--corBege), #f0c754ba);
+    padding: 1rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: var(--corBege);
+    height: 100px;
+    font-size: 1em;
 }
 
 header > nav ul{
     display: flex;
     list-style: none;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 400;
+    gap: 5rem;
+}
+
+header > nav > ul > li > a{
+    text-decoration: none;
+    color: var(--corEscura);
+    font-weight: bold;
+    padding: 1rem;
+    display: block;
+    font-size: 1em;
 }
 
 header > nav > ul > li > a:hover{
     background-color: var(--corLaranja);
     color: var(--corAzul);
     transition: .4s;
-    border-radius: 3px;
-    text-decoration: underline;
-}
-
-
-header > nav > ul > li > a{
-    text-decoration: none;
-    color: var(--corEscura);
-    font-weight: bold;
-    padding: 10px 20px;
 }
 
 header .tit{
@@ -102,4 +103,105 @@ main h2{
     font-family: var(--fontT);
     text-align: center;
     font-size: 2em;
+}
+
+header nav #btn{
+    display: none;
+    cursor: pointer;
+    background-color: var(--corEscura);
+}
+
+main div.video{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background: white;
+}
+
+section.prod{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--corLaranja);
+    gap: 2rem;
+    padding: 2rem;
+
+}
+
+section.prod div{
+    max-width: 50vw;
+    padding: 7rem;
+    background-color: white;
+    font-family: var(--fontN);
+    font-size: 1.1em;
+}
+
+section.prod div button{
+    display: block;
+}
+
+section.receber{
+    background: var(--corAzul);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+section.receber div.content{
+    max-width: 50vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--corEscura);
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fontN);
+    font-size: 1.1em;
+    padding: 7rem;
+    color: white;
+}
+
+footer{
+    background-color: var(--corEscura);
+    display: flex;
+    font-family: var(fontN);
+    font-size: 1em;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    color: white;
+}
+
+@media (max-width: 750px){
+    header nav #btn{
+        display: block;
+    }
+
+    header nav .navPage{
+        display: block;
+        position:absolute;
+        width: 100%;
+        right: 0;
+        background: var(--corBege);
+        top: 100px;
+        height: 0;
+        transition: all 0.6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden ;
+    }
+
+    nav.active .navPage{
+        height: calc(100vh - 100px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .navPage a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 1px solid #f244052a;
+        text-align: center;
+    }
 }

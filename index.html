@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <title>La Paçoca - Mousse de Paçoca</title>
+        <script src="js/script.js" defer></script>
     </head>
     <body>
         <header>
@@ -18,6 +19,7 @@
                     <div class="logon">
                         <img src="img/logo1.svg" alt="Logo da empresa la paçoca" width="70px" height="70px">
                     </div>
+                    <button id="btn"><img class="icon" src="img/menu.svg" alt="menu mobile"></button>
                     <ul class="navPage">
                         <li><a href="#" rel="next">Sobre</a></li>
                         <li><a href="#" rel="next">Produtos</a></li>
@@ -37,23 +39,29 @@
         <main>
             
 
-            <iframe src="" frameborder="0">Video não disponivel</iframe>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/8r9ZeKk6evA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen autoplay>Video indisponivel</iframe>
+            </div>
 
-            <section>
-                <img src="img/produto.png" alt="imagem da mousse de paçoca">
-                <div></div>
+            <section class="prod">
+                <img src="img/produto.jpg" alt="imagem da mousse de paçoca" width="350px">
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut repellendus officiis veniam, voluptatibus repellat similique ratione, assumenda ea odio dolorem porro, autem reprehenderit vel aut est. Ipsa nihil dolorem natus?
+                    <button>Ver mais</button>
+                </div>
             </section>
         </main>
-        <section>
-            <img src="img/logo.svg" alt="logo da empresa La Paçoca" width="100%">
-            <div>
+        <section class="receber">
+            <img src="img/logo.svg" alt="logo da empresa La Paçoca" width="350px">
+            <div class="content">
                 <label for="inpEmail">
                     Receba notificações de novos produtos
                 </label>
 
-                <input type="email" name="email" placeholder="Digite seu email" id="inpEmail">
-
-                <button id="btnReceber">Receber</button>
+                <div class="email">
+                    <input type="email" name="email" placeholder="Digite seu email" id="inpEmail">
+                    <button id="btnReceber">Receber</button>
+                </div>
 
                 <nav>
                     <ul class="navRede">
@@ -66,7 +74,9 @@
         </section>
 
         <footer>
-            <p>Produzido e direitos reservados ao &copy; brunox_o </p>
+            <p>
+                Produzido e direitos reservados ao &copy; brunox_o
+            </p>
         </footer>
     </body>
 </html>
