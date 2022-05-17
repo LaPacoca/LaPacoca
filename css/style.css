@@ -68,8 +68,7 @@ header .tit{
     justify-items: center;
     display: block;
     background-image: url("../img/amendoim.jpg");
-    background-position: center center;
-    height: 300px;
+    background-size: cover;
     width: 100%;
     display: flex;
     justify-content: center;
