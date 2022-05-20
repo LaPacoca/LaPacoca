@@ -23,6 +23,7 @@ header{
     align-items: center;
     box-shadow: 0px 3px 3px #17130784;
     font-family: var(--fontN);
+    border-bottom: 2px solid var(--corBege);
 }
 
 header > nav{
@@ -222,6 +223,10 @@ section.receber div.content nav ul{
     border: none;
 }
 
+main div.video {
+    background: var(--corEscura);
+}
+
 ion-icon {
     font-size: 40px;
     color: white;
@@ -289,5 +294,9 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    section.receber div.content {
+        text-align: center;
     }
 }
