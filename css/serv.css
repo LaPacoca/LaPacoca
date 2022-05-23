@@ -70,31 +70,17 @@ header nav #btn{
     background-color: var(--corEscura);
 }
 
-header .tit{
+footer{
+    background-color: var(--corEscura);
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    display: block;
-    background-image: url("../img/amendoim.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 250px;
-    display: flex;
+    font-family: var(--fontN);
+    font-size: 1em;
     justify-content: center;
     align-items: center;
+    height: 10vh;
+    color: white;
 }
 
-header .tit .title{
-   text-align: center;
-   font-family: var(--fontT);
-   color: white;
-   text-shadow: 1px -1px 7px black;
-}
-
-header .tit .title h1{
-    font-size: 3rem;
-}
 
 @media (max-width: 750px){
     header nav #btn{

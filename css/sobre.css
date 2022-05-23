@@ -16,6 +16,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--fontN);
 }
 
 header{
@@ -70,31 +71,68 @@ header nav #btn{
     background-color: var(--corEscura);
 }
 
-header .tit{
+main{
+    background-color: var(--corLaranja);
+}
+
+main .missao{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    display: block;
-    background-image: url("../img/amendoim.jpg");
-    background-size: cover;
-    width: 100%;
+}
+
+main .missao aside{
+    width: 350px;
     height: 250px;
+    background-color: rgb(131, 57, 57);
+    margin: 30px;
+}
+
+.sectionValores{
+    background-color: var(--corAzul);
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    
+}
+
+.sectionValores div.valores{
+   display: flex;
+    padding: 1rem;
+    width: 70%;
+    overflow-x: scroll;
+
+}
+
+.sectionValores div.valores aside{
+    min-width: 500px;
+    height: 250px;
+    background-color: white;
+    margin: 10px;
+}
+
+section.historia{
+    background-color: yellow;
+    display: flex;
+}
+
+section.historia aside{
+    background-color: white;
+    width: 400px;
+    height: 300px;
+    margin: 30px;
+}
+
+footer{
+    background-color: var(--corEscura);
+    display: flex;
+    font-family: var(--fontN);
+    font-size: 1em;
     justify-content: center;
     align-items: center;
+    height: 10vh;
+    color: white;
 }
 
-header .tit .title{
-   text-align: center;
-   font-family: var(--fontT);
-   color: white;
-   text-shadow: 1px -1px 7px black;
-}
-
-header .tit .title h1{
-    font-size: 3rem;
-}
 
 @media (max-width: 750px){
     header nav #btn{
