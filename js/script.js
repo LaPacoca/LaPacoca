@@ -6,9 +6,9 @@ function ativarMenu(){
     const nav = document.querySelector("nav");
     nav.classList.toggle('active');
     if(nav.className == 'active'){
-        document.querySelector('.icon').src = "img/close.svg";
+        document.querySelector('.icon').src = "../img/close.svg";
     }else{
-        document.querySelector('.icon').src = "img/menu.svg";
+        document.querySelector('.icon').src = "../img/menu.svg";
     }
 }
 

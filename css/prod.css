@@ -23,6 +23,7 @@ header{
     align-items: center;
     box-shadow: 0px 3px 3px #17130784;
     font-family: var(--fontN);
+    border-bottom: 2px solid var(--corBege);
 }
 
 header > nav{
@@ -53,112 +54,187 @@ header > nav > ul > li > a{
     padding: 1rem;
     display: block;
     font-size: 1em;
+    border-radius: 5px;
+    transition: 0.4s;
 }
 
 header > nav > ul > li > a:hover{
-    background-color: var(--corLaranja);
-    color: var(--corAzul);
+    background-color: var(--corEscura);
+    color: var(--corLaranja);
     transition: .4s;
 }
 
-.principalSlide #prodSlide > img {
-    width: 350px;
-    border-radius: 8px;
-    object-fit: cover;
-}
-
-.principalSlide{
-    margin: 0;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 10px;
-    transition: background 0.4s ease-in;
-    background-color: black;
-}
-
-.slider {
-    display: none; 
-}
-
-.card {
-    position: absolute;
-    width: 70%; 
-    height: 70%;
-    left: 0;
-    right: 0;
-    margin: auto;
+header nav #btn{
+    display: none;
     cursor: pointer;
-    transition: transform 0.8s ease;
-    background-color: white;
-    border-radius: 8px;
+    background-color: var(--corEscura);
 }
 
-#prodSlide {
-    width: 100%;
-    height: 100%;
-    max-width: 600px;
-    max-height: 600px;
+header .tit{
     display: flex;
-    transform-style: preserve-3d;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
+    justify-items: center;
+    display: block;
+    background-image: url("../img/amendoim.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#cards {
-    display: flex;
-    align-items: center;
-    position: relative;
+header .tit .title{
+   text-align: center;
+   font-family: var(--fontT);
+   color: white;
+   text-shadow: 1px -1px 7px black;
+}
+
+header .tit .title h1{
+    font-size: 3rem;
+}
+
+/* Slider */
+
+.card{
     width: 100%;
     height: 100%;
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0d0d0d;
+    padding: 60px;
 }
 
-#item1:checked ~ #cards #song3,
-#item2:checked ~ #cards #song1,
-#item3:checked ~ #cards #song2 {
-    transform: translateX(-40%) scale(0.8);
-    opacity: 0.4;
-    z-index: 0;
+.slider{
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.4s;
 }
 
-#item1:checked ~ #cards #song2,
-#item2:checked ~ #cards #song3,
-#item3:checked ~ #cards #song1 {
-    transform: translateX(40%) scale(0.8);
-    opacity: 0.4;
-    z-index: 0;
+.slides{
+    width: 800px;
+    display: flex;
 }
 
-#item1:checked ~ #cards #song1,
-#item2:checked ~ #cards #song2,
-#item3:checked ~ #cards #song3 {
-    transform: translateX(0) scale(1);
-    opacity: 1;
-    z-index: 1;
+.imagens img{
+    width: 600px;
+    height: 400px;
 }
 
-#item1:checked ~ #cards #song1 img,
-#item2:checked ~ #cards #song2 img,
-#item3:checked ~ #cards #song3 img {
-   box-shadow: 0px 0px 18px hsl(190, 100%, 50%);
+#imga{
+    transition: all 2s;
 }
 
-.radio {
+.btn{
+    position: absolute;
+    color: #858585;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    transition: all 0.4s;
+    font-size: 2em;
+    margin-top: -5px;
+    transform: translateY(-500px);
 }
 
-@media only screen and (max-width: 650px){
-    .card {
-        position: absolute;
-        width: 60%; 
-        height: 50%;
-        left: 0;
-        right: 0;
-        margin: auto;
-        cursor: pointer;
-        transition: transform 0.8s ease;
+.btn:hover{
+    color: #fff;
+}
+
+#volta{
+    top:100%;
+    left: 20%;
+}
+
+#avanca{
+    top:100%;
+    right: 20%;
+}
+
+.bolinha{
+    position: absolute;
+    width: 600px;
+    height: 0px;
+    display: flex;
+    justify-content: center;
+    margin-top: 360px;
+}
+
+.bolinha div{
+    transition: all 0.5s;
+    border: 3px solid #fff;
+    padding: 6px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+    background-color: none;
+}
+
+.bolinha div:hover{
+    background-color: #fff;
+}
+/* Produtos */
+
+
+
+main .produtos {
+    height: 300px;
+    width: 150px;
+    background: var(--corEscura);
+}
+
+@media (max-width: 750px){
+
+    header nav #btn{
+        display: block;
     }
+
+    header nav .navPage{
+        display: block;
+        position:absolute;
+        width: 100%;
+        right: 0;
+        background: var(--corBege);
+        top: 100px;
+        height: 0;
+        transition: all 0.6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden ;
+    }
+
+    nav.active .navPage{
+        height: calc(100vh - 100px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .navPage a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 1px solid #f244052a;
+        text-align: center;
+    }
+
+    .imagens img, .slider {
+        width: 300px;
+        height: 150px;
+    }
+
+    .slides {
+        width: 500px;
+    }
+
+    .bolinha, .btn {
+        display: none;
+    }
+
 }
