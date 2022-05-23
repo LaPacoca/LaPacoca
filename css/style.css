@@ -119,11 +119,12 @@ header nav #btn{
 }
 
 main div.video{
+    background: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
-    padding: 2rem;
-    background: white;
+    align-items: center;
 }
+
 
 section.prod{
     display: flex;
@@ -215,16 +216,23 @@ section.receber div.content nav ul{
     border: none;
     border-radius: 3px;
     color: white;
+    transition: .4s;
+}
+
+#btnReceber:hover{
+    transform: scale(1.05);
 }
 
 #inpEmail {
     border-radius: 3px;
     outline: none;
     border: none;
+    font-family: var(--fontN);
 }
 
 main div.video {
     background: var(--corEscura);
+    padding: 1rem;
 }
 
 ion-icon {
@@ -245,7 +253,7 @@ footer{
     font-size: 1em;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    height: 10vh;
     color: white;
 }
 
@@ -281,6 +289,22 @@ footer{
         text-align: center;
     }
 
+    header .tit{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        display: block;
+        background-image: url("../img/amendoim.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     section.receber img {
         display: none;
     }
@@ -294,6 +318,15 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    #inpEmail{
+        height: 3rem;
+    }
+
+    #btnReceber:hover{
+        transition: .4s;
+       transform: scale(1.1); 
     }
 
     section.receber div.content {
