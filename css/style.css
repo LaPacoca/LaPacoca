@@ -64,6 +64,12 @@ header > nav > ul > li > a:hover{
     transition: .4s;
 }
 
+header nav #btn{
+    display: none;
+    cursor: pointer;
+    background-color: var(--corEscura);
+}
+
 header .tit{
     display: flex;
     flex-direction: column;
@@ -112,11 +118,7 @@ main h2{
     font-size: 2em;
 }
 
-header nav #btn{
-    display: none;
-    cursor: pointer;
-    background-color: var(--corEscura);
-}
+
 
 main div.video{
     display: flex;

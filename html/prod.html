@@ -26,70 +26,43 @@
                         <li><a href="serv.html" rel="next">Serviços</a></li>
                     </ul>
             </nav>
-            <div class="tit">
-                <div class="title">
-                    <h1>Mousse de Paçoca</h1>
-                    <h2>O mais gostoso de todos os tempos</h2>
-                </div>
-            </div>
         </header>
+        <div class="card">
+            <div class="slider">
+                <div class="slides">
+                    <div id="volta" class="btn">
+                        <p class="left">&lt;</p>
+                    </div>
+                    <div id="avanca" class="btn">
+                        <p class="right">&gt;</p>
+                    </div>
 
-        <div class="principalSlide">
-            <div id="prodSlide">
-                <input type="radio" class="slider" id="item1" name="slider" checked>
-                <input type="radio" class="slider" id="item2" name="slider">
-                <input type="radio" class="slider" id="item3" name="slider">
-                <div id="cards">
-                    <label for="item1" class="card" id="song1">
-                        <img src="../img/img1.jpg"   alt="Cidade a noite">
-                    </label>
-                    <label for="item2" class="card" id="song2">
-                        <img src="../img/img2.jpg"   alt="Floresta mágica">
-                    </label>
-                    <label for="item3" class="card" id="song3">
-                        <img src="../img/img3.jpg"   alt="Estrada deserta">
-                    </label>
+                    <div class="imagens" id="imga">
+                        <img src="../img/card1.jfif">
+                    </div>
+                    <div class="imagens">
+                        <img src="../img/card2.jpg">
+                    </div>
+                    <div class="imagens">
+                        <img src="../img/card3.jpg">
+                    </div>
+                    <div class="imagens">
+                        <img src="../img/card4.jpg">
+                    </div>
+
+                    <div class="bolinha">
+                    </div>
                 </div>
-                <nav>
-                    <input type="radio" name="select" class="radio" id="arr1" checked>
-                    <input type="radio" name="select" class="radio" id="arr2">
-                    <input type="radio" name="select" class="radio" id="arr3">
-                </nav>
             </div>
         </div>
-        <script>
-            var radios = document.querySelectorAll(".radio");
-            var items = document.querySelectorAll(".slider");
-            var radioUm = document.querySelector("#arr1");
-            var radioDois = document.querySelector("#arr2");
-            var radioTres = document.querySelector("#arr3");
-    
-            var item1 = document.querySelector("#item1");
-            var item2 = document.querySelector("#item2");
-            var item3 = document.querySelector("#item3");
-    
-            radios.forEach((x) => {
-                x.addEventListener('click', () => {
-                    if(radioUm.checked){
-                        item1.checked = true;
-                    }
-                    if(radioDois.checked){
-                        item2.checked = true;
-                    }
-                    if(radioTres.checked){
-                        item3.checked = true;
-                    }
-                });
-            });
-    
-            var count = 0;
-            setInterval(() => {
-                items[count].checked = true;
-                count++;
-                if(count > 2){
-                    count = 0;
-                }
-            }, 5000)
-        </script>
+
+        <main>
+            <div class="produtos"></div>
+            <div class="produtos"></div>
+            <div class="produtos"></div>
+            <div class="produtos"></div>
+            <div class="produtos"></div>
+        </main>
+        <script src="../js/prod.js"></script>
     </body>
 </html>

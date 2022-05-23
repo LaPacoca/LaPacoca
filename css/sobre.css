@@ -23,6 +23,7 @@ header{
     align-items: center;
     box-shadow: 0px 3px 3px #17130784;
     font-family: var(--fontN);
+    border-bottom: 2px solid var(--corBege);
 }
 
 header > nav{
@@ -53,10 +54,79 @@ header > nav > ul > li > a{
     padding: 1rem;
     display: block;
     font-size: 1em;
+    border-radius: 5px;
+    transition: 0.4s;
 }
 
 header > nav > ul > li > a:hover{
-    background-color: var(--corLaranja);
-    color: var(--corAzul);
+    background-color: var(--corEscura);
+    color: var(--corLaranja);
     transition: .4s;
+}
+
+header nav #btn{
+    display: none;
+    cursor: pointer;
+    background-color: var(--corEscura);
+}
+
+header .tit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    display: block;
+    background-image: url("../img/amendoim.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .tit .title{
+   text-align: center;
+   font-family: var(--fontT);
+   color: white;
+   text-shadow: 1px -1px 7px black;
+}
+
+header .tit .title h1{
+    font-size: 3rem;
+}
+
+@media (max-width: 750px){
+    header nav #btn{
+        display: block;
+    }
+
+    header nav .navPage{
+        display: block;
+        position:absolute;
+        width: 100%;
+        right: 0;
+        background: var(--corBege);
+        top: 100px;
+        height: 0;
+        transition: all 0.6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden ;
+    }
+
+    nav.active .navPage{
+        height: calc(100vh - 100px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .navPage a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 1px solid #f244052a;
+        text-align: center;
+    }
+
+
 }
