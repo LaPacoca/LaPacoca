@@ -27,46 +27,52 @@
         </nav>
     </header>
     <div id="principal">
-        <main class="content"> 
+        <main class="content" id="dadosProduto"> 
+            <div id="iptsMain">
+                <div class="title"> Nome do produto </div>
+                <div class="divs">
+                    <div id="stars"></div>
+                </div>
+                <div class="divs">
+                    <article id="prc"> R$00.00 </article>
+                    <article> 
+                        ou em <span class="dest"> 10x </span> de 
+                        <span class="dest"> 
+                            tantos reais...
+                        </span> 
+                    </article>
+                </div>
+                <div class="divs">
+                    <ion-icon name="cube" class="icons"></ion-icon> Frete gratis
+                    <article> Frete gratis para qualquer produto na primeira compra. </article>
+                </div>
+                <div class="divs">
+                    Quantidade (X)
+                    <select id="qtd"></select> <br>
+                </div>
+                <div class="divs">
+                    <ion-icon name="flash" class="icons"></ion-icon> Entrega rápida:
+                    <article> Prazo dentro de 2 dias </article>
+                </div>
+                <div class="divs">
+                <ion-icon name="wallet" class="icons"></ion-icon> Metodos de pagamento: <br>
+                    <input type="radio" name="pagamento" value="cc" checked> Cartão de crédito <br>
+                    <input type="radio" name="pagamento" value="cd"> Cartão de débito <br> 
+                    <input type="radio" name="pagamento" value="pix"> PIX <br>
+                    <input type="radio" name="pagamento" value="bolet"> Boleto <br>
+                </div>
+                <button id="compra"> REALIZAR COMPRA </button>
+            </div>
             <div id="imagemPlaceholder"> 
                 IMAGEM
             </div>
+            <details>
+                <summary>
+                    DESCRIÇÃO
+                </summary>
+                <div> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut autem adipisci totam laudantium corporis possimus laborum voluptatum nemo laboriosam exercitationem ipsum eaque qui deserunt delectus cupiditate quia sapiente, alias beatae.</div>
+            </details>
         </main>
-        <aside class="content" id="dadosProduto"> 
-            <div class="title"> Nome do produto </div>
-            <div class="divs">
-                <div id="stars"></div>
-            </div>
-            <div class="divs">
-                <article id="prc"> R$00.00 </article>
-                <article> 
-                    ou em <span class="dest"> 10x </span> de 
-                    <span class="dest"> 
-                        tantos reais...
-                    </span> 
-                </article>
-            </div>
-            <div class="divs">
-                <ion-icon name="cube" class="icons"></ion-icon> Frete gratis
-                <article> Frete gratis para qualquer produto na primeira compra. </article>
-            </div>
-            <div class="divs">
-                Quantidade (X)
-                <select id="qtd"></select> <br>
-            </div>
-            <div class="divs">
-                <ion-icon name="flash" class="icons"></ion-icon> Entrega rápida:
-                <article> Prazo dentro de 2 dias </article>
-            </div>
-            <div class="divs">
-            <ion-icon name="wallet" class="icons"></ion-icon> Metodos de pagamento: <br>
-                <input type="radio" name="pagamento" value="cc" checked> Cartão de crédito <br>
-                <input type="radio" name="pagamento" value="cd"> Cartão de débito <br> 
-                <input type="radio" name="pagamento" value="pix"> PIX <br>
-                <input type="radio" name="pagamento" value="bolet"> Boleto <br>
-            </div>
-            <button id="compra"> REALIZAR COMPRA </button>
-        </aside>
     </div>
     <script src="../js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

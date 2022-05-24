@@ -95,3 +95,38 @@ header .tit .title{
 header .tit .title h1{
     font-size: 3rem;
 }
+
+/* Responsividade */
+
+@media (max-width: 750px){
+    header nav #btn{
+        display: block;
+    }
+
+    header nav .navPage{
+        display: block;
+        position:absolute;
+        width: 100%;
+        right: 0;
+        background: var(--corBege);
+        top: 100px;
+        height: 0;
+        transition: all 0.6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden ;
+    }
+
+    nav.active .navPage{
+        height: calc(100vh - 100px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .navPage a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 1px solid #f244052a;
+        text-align: center;
+    }
+}

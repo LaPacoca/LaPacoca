@@ -5,6 +5,7 @@ let imagem = document.getElementById('imga');
 let next = document.getElementById('avanca');
 let volta = document.getElementById('volta');
 let rolar = true;
+let nodeList = document.querySelectorAll(".imagens img");
 
 for(let i = 0; i < qtd.length; i++){
     var div = document.createElement('div');
@@ -44,7 +45,11 @@ function slide(){
         atual = qtd.length-1;
     }
     document.querySelector('.imgatual').classList.remove('imgatual');
-    imagem.style.marginLeft = -300*atual+'px';
+    if(nodeList[0].width > 500){
+        imagem.style.marginLeft = -600*atual+'px';
+    }else{
+        imagem.style.marginLeft = -300*atual+'px';
+    }
     document.getElementById(atual).classList.add('imgatual')
 };
 
