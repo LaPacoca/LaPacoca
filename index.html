@@ -11,7 +11,6 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <title>La Paçoca - Mousse de Paçoca</title>
-        <script src="js/script.js" defer></script>
     </head>
     <body>
         <header>
@@ -79,5 +78,22 @@
             </p>
         </footer>
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script>
+            'use strict';
+
+const btn = document.querySelector("#btn");
+
+function ativarMenu(){
+    const nav = document.querySelector("nav");
+    nav.classList.toggle('active');
+    if(nav.className == 'active'){
+        document.querySelector('.icon').src = "img/close.svg";
+    }else{
+        document.querySelector('.icon').src = "img/menu.svg";
+    }
+}
+
+btn.addEventListener("click", ativarMenu);
+        </script>
     </body>
 </html
