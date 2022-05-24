@@ -197,11 +197,12 @@ main .produtos {
     padding: 20px;
 }
 
-.imgPlaceholder {
+.imgDef {
     height: 250px;
     width: 250px;
     background: var(--corAzul);
     border-radius: 5px;
+    object-fit: cover;
 }
 
 a {
@@ -215,6 +216,12 @@ a {
 
 .prodComprar {
     padding: 10px 20px;
+}
+
+.title {
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 /* Chamada para o serviço */

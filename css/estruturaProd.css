@@ -96,7 +96,7 @@ summary {
 #imagemPlaceholder {
     background: var(--corLaranja);
     height: 60vh;
-    width: 100%;
+    width: 60vh;
     border-radius: 10px; 
     color: black;
     display: flex;
@@ -160,5 +160,9 @@ summary {
         grid-template-areas: "img"
                              "ipts"
                              "details";
+    }
+
+    #imgPlaceholder {
+        width: 100%;
     }
 }

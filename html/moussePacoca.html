@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="@brunox_o">
+    <meta name="description" content="Produto especifico">
+    <meta name="keywords" content=" ">
+    <meta name="copyright" content="₢ @brunox_o">
+    <link rel="stylesheet" href="../css/estruturaProd.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <title> Mousse de Paçoca</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logon">
+                    <a href="../index.html"><img src="../img/logo1.svg" alt="Logo da empresa la paçoca" width="70px" height="70px"></a>
+                </div>
+                <button id="btn"><img class="icon" src="../img/menu.svg" alt="menu mobile"></button>
+                <ul class="navPage">
+                    <li><a href="sobre.html" rel="next">Sobre</a></li>
+                    <li><a href="prod.html" rel="next">Produtos</a></li>
+                    <li><a href="serv.html" rel="next">Serviços</a></li>
+                </ul>
+        </nav>
+    </header>
+    <div id="principal">
+        <main class="content" id="dadosProduto"> 
+            <div id="iptsMain">
+                <div class="title"> Mousse de paçoca </div>
+                <div class="divs">
+                    <div id="stars"></div>
+                </div>
+                <div class="divs">
+                    <article id="prc"> R$00.00 </article>
+                    <article> 
+                        ou em <span class="dest"> 10x </span> de 
+                        <span class="dest"> 
+                            tantos reais...
+                        </span> 
+                    </article>
+                </div>
+                <div class="divs">
+                    <ion-icon name="cube" class="icons"></ion-icon> Frete gratis
+                    <article> Frete gratis para qualquer produto na primeira compra. </article>
+                </div>
+                <div class="divs">
+                    Quantidade (X)
+                    <select id="qtd"></select> <br>
+                </div>
+                <div class="divs">
+                    <ion-icon name="flash" class="icons"></ion-icon> Entrega rápida:
+                    <article> Prazo dentro de 2 dias </article>
+                </div>
+                <div class="divs">
+                <ion-icon name="wallet" class="icons"></ion-icon> Metodos de pagamento: <br>
+                    <input type="radio" name="pagamento" value="cc" checked> Cartão de crédito <br>
+                    <input type="radio" name="pagamento" value="cd"> Cartão de débito <br> 
+                    <input type="radio" name="pagamento" value="pix"> PIX <br>
+                    <input type="radio" name="pagamento" value="bolet"> Boleto <br>
+                </div>
+                <button id="compra"> REALIZAR COMPRA </button>
+            </div>
+            <div id="imagemPlaceholder"> 
+                IMAGEM
+            </div>
+            <details>
+                <summary>
+                    DESCRIÇÃO
+                </summary>
+                <div> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut autem adipisci totam laudantium corporis possimus laborum voluptatum nemo laboriosam exercitationem ipsum eaque qui deserunt delectus cupiditate quia sapiente, alias beatae.</div>
+            </details>
+        </main>
+    </div>
+    <script src="../js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../js/estruturaProd.js"></script>
+</body>
+</html>
