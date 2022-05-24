@@ -20,6 +20,15 @@
     font-family: var(--fontN);
 }
 
+img:hover{
+    transform: scale(1.05);
+    transition: ease-in-out .4s;
+}
+
+img{
+    transition: .4s;
+}
+
 header{
     width: 100%;
     align-items: center;
@@ -72,16 +81,11 @@ header nav #btn{
     background-color: var(--corEscura);
 }
 
-main{
-    background-color: var(--corEscura);
-}
-
 main div.tit{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    color: white;
 }
 
 main div.tit span{
@@ -95,16 +99,13 @@ main div.tit h1{
 }
 
 main .missao{
+    transition: .4s;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: var(--corEscura);
 }
 
 main .missao aside{
-    width: 450px;
-    height: 250px;
-    background-color: rgb(131, 57, 57);
     margin: 30px;
 }
 
@@ -137,7 +138,6 @@ main .missao aside{
     overflow-x: scroll;
 }
 
-
 div.valores::-webkit-scrollbar {
     width: 20px;               /* width of the entire scrollbar */
     
@@ -156,21 +156,15 @@ div.valores::-webkit-scrollbar-thumb {
 
 .sectionValores div.valores aside{
     min-width: 300px;
-    height: 250px;
-    background-color: white;
     margin: 10px;
 }
 
 section.historia{
     justify-content: right;
     display: flex;
-    flex-wrap: wrap;
 }
 
 section.historia aside{
-    background-color: black;
-    width: 400px;
-    height: 300px;
     margin: 30px;
 }
 
@@ -227,5 +221,27 @@ footer{
         padding: 0;
         display: flex;
         flex-direction: column;
+    }
+    main .missao aside img{
+        width: 350px;
+    }
+
+    section.historia img{
+       width: 350px;
+    }
+    section.historia{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img:hover{
+        transform: scale(1);
+        transition: none;
+    }
+    
+    img{
+        transition: none;
     }
 }
