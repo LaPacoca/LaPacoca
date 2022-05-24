@@ -12,6 +12,7 @@
     --fontN: 'Roboto', sans-serif;
 }
 
+
 *{
     margin: 0;
     padding: 0;
@@ -72,22 +73,43 @@ header nav #btn{
 }
 
 main{
-    background-color: var(--corLaranja);
+    background-color: var(--corEscura);
+}
+
+main div.tit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+}
+
+main div.tit span{
+    font-family: var(--fontT);
+    font-size: 3.2em;
+}
+
+main div.tit h1{
+    font-family: var(--fontT);
+    font-size: 1.5em;
 }
 
 main .missao{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--corEscura);
 }
 
 main .missao aside{
-    width: 350px;
+    width: 450px;
     height: 250px;
     background-color: rgb(131, 57, 57);
     margin: 30px;
 }
 
 .sectionValores{
-    background-color: var(--corAzul);
+    background-color: var(--corLaranja);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -95,28 +117,58 @@ main .missao aside{
     
 }
 
+.sectionValores div.val{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fontT);
+}
+
+.sectionValores div.val h2{
+    text-align: center;
+    font-family: var(--fontT);
+    font-size: 2rem;
+}
+
 .sectionValores div.valores{
    display: flex;
     padding: 1rem;
     width: 70%;
     overflow-x: scroll;
-
 }
 
+
+div.valores::-webkit-scrollbar {
+    width: 20px;               /* width of the entire scrollbar */
+    
+  }
+  
+div.valores::-webkit-scrollbar-track {
+    background-color: rgba(226, 226, 226, 0.26);    /* color of the tracking area */
+    border-radius: 20px;
+  }
+  
+div.valores::-webkit-scrollbar-thumb {
+    background-color: black;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+  }
+
+
 .sectionValores div.valores aside{
-    min-width: 500px;
+    min-width: 300px;
     height: 250px;
     background-color: white;
     margin: 10px;
 }
 
 section.historia{
-    background-color: yellow;
+    justify-content: right;
     display: flex;
+    flex-wrap: wrap;
 }
 
 section.historia aside{
-    background-color: white;
+    background-color: black;
     width: 400px;
     height: 300px;
     margin: 30px;
@@ -166,5 +218,14 @@ footer{
         text-align: center;
     }
 
+    .sectionValores{
+      display: block;
+    }
 
+    .sectionValores div.valores{
+        overflow-x: initial;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
 }
