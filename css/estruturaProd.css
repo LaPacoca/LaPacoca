@@ -103,6 +103,7 @@ summary {
     display: flex;
     align-self: center;
     justify-self: center;
+    object-fit: cover;
     grid-area: img;
 }
 
