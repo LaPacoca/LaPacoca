@@ -18,6 +18,10 @@
     box-sizing: border-box;
 }
 
+a{
+ text-decoration: none;
+}
+
 header{
     width: 100%;
     align-items: center;
@@ -70,6 +74,57 @@ header nav #btn{
     background-color: var(--corEscura);
 }
 
+section{
+    background-color: var(--corLaranja);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+section img{
+    transition: .4s;
+
+}
+
+section img:hover{
+    transform: scale(1.01);
+    transition: .4s ease;
+    filter: blur(1px);
+    cursor: pointer;
+}
+
+section div.desc{
+    max-width: 600px;
+    padding: 30px;
+    font-family: var(--fontN);
+    font-size: 1rem;
+    color: var(--corEscura);
+    background-color: white;
+    border-radius: 5px;
+}
+
+section div button{
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    background: var(--corEscura);
+    color: #ff7b2e;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.5s;
+    border: none;
+    cursor: pointer
+}
+
+section div button:hover{
+    padding: 5px 15px;
+    transition: 0.5s;
+}
+
 footer{
     background-color: var(--corEscura);
     display: flex;
@@ -79,6 +134,9 @@ footer{
     align-items: center;
     height: 10vh;
     color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 
@@ -114,4 +172,21 @@ footer{
         text-align: center;
     }
 
+    section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section img{
+        width: 400px;
+    }
+
+    section div.desc{
+        margin: 10px;
+        max-width: 400px;
+    }
+
+    footer{
+        position: initial;
+    }
 }

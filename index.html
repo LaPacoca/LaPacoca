@@ -46,7 +46,7 @@
                 <img src="img/produto.jpg" alt="imagem da mousse de paçoca" width="350px">
                 <div>
                         A mousse de paçoca é mais novidade da nossa empresa. Feita a partir de produtos selecionados à mão, pensando no prazer da degustação, buscando maior qualidade e feita com amor e carinho.
-                    <button>Ver mais</button>
+                    <a href="html/moussePacoca.html"><button>Ver mais</button></a>
                 </div>
             </section>
         </main>
@@ -94,6 +94,17 @@ function ativarMenu(){
 }
 
 btn.addEventListener("click", ativarMenu);
+
+const email = document.querySelector("#btnReceber");
+email.addEventListener('click', ()=>{
+    let input = document.querySelector("input").value;
+    if(input == ""){
+        alert("Coloque seu email para poder receber notificações");
+    }else{
+        alert("Daqui a 5 minutos iremos mandar sua notificação");
+        input = " hgws";
+    }
+})
         </script>
     </body>
 </html
