@@ -61,4 +61,4 @@ setInterval(()=>{
     else{
         rolar = true
     }
-},6000);
+},7000);

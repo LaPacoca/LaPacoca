@@ -138,12 +138,12 @@ footer{
 }
 
 #volta{
-    top:100%;
+    top:125%;
     left: 20%;
 }
 
 #avanca{
-    top:100%;
+    top:125%;
     right: 20%;
 }
 
@@ -158,7 +158,7 @@ footer{
 
 .bolinha div{
     transition: all 0.5s;
-    border: 3px solid #fff;
+    border: 3px solid rgba(255, 255, 255, 0.502);
     padding: 6px;
     border-radius: 50%;
     margin-right: 15px;
@@ -171,7 +171,7 @@ footer{
 }
 
 div.card div.slider div.bolinha div.imgatual {
-    background: white;
+    background: rgba(255, 255, 255, 0.589);
     transition: all .4s ease;
 }
 
@@ -188,6 +188,25 @@ main #contentProd {
     width: 80vw;
     padding: 10px;
     overflow-x: scroll;
+}
+
+main #contentProd button{
+    display: block;
+    padding: 10px 15px;
+    background: var(--corLaranja);
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.5s;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s ease;
+    
+}
+
+main #contentProd button:hover{
+    transition: 0.4s ease;
+    background-color: #cb4c02ea;
 }
 
 main .produtos {
@@ -250,12 +269,30 @@ section {
 
 #imgChamada {
     height: 220px;
-    width: 220px;
-    background: var(--corAzul);
+    width: 330px;
 }
 
 #divBtn {
     margin-top: 15px;
+}
+
+#divBtn button{
+    display: block;
+    padding: 10px 15px;
+    background: var(--corLaranja);
+    color: var(--corEscura);
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.5s;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s ease;
+    font-weight: bold;
+}
+
+#divBtn button:hover{
+    transition: 0.4s ease;
+    background-color: #cb4c02ea;
 }
 
 button {
