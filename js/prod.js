@@ -48,7 +48,7 @@ function slide(){
     if(nodeList[0].width > 500){
         imagem.style.marginLeft = -600*atual+'px';
     }else{
-        imagem.style.marginLeft = -360*atual+'px';
+        imagem.style.marginLeft = -380*atual+'px';
     }
     document.getElementById(atual).classList.add('imgatual')
 };
@@ -61,4 +61,4 @@ setInterval(()=>{
     else{
         rolar = true
     }
-},7000);
+},4500);
