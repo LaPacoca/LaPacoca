@@ -96,6 +96,35 @@ header .tit .title h1{
     font-size: 3rem;
 }
 
+#voltar{
+    position: fixed;
+    bottom: 15px;
+    right: 3px;
+    background-color: #95e5e6bb;
+    color: white;
+    padding: 13px;
+    cursor: pointer;
+    transition: .4s ease;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#voltar:hover{
+    background-color: var(--corAzul);
+    transition: .4s ease-in;
+}
+
+footer{
+    background-color: var(--corEscura);
+    display: flex;
+    font-family: var(--fontN);
+    font-size: 1em;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    color: white;
+}
+
 /* Responsividade */
 
 @media (max-width: 750px){
