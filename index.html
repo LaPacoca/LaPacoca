@@ -58,7 +58,7 @@
                 </label>
 
                 <div class="email">
-                    <input type="email" name="email" placeholder="Digite seu email" id="inpEmail">
+                    <input type="email" name="email" placeholder="Digite seu email" class="inpEmail">
                     <button id="btnReceber">Receber</button>
                 </div>
 
@@ -97,13 +97,20 @@ btn.addEventListener("click", ativarMenu);
 
 const email = document.querySelector("#btnReceber");
 email.addEventListener('click', ()=>{
-    let input = document.querySelector("input").value;
-    if(input == ""){
-        alert("Coloque seu email para poder receber notificações");
+    let input = document.querySelector("input"); 
+    if(!document.querySelector("input").value == ""){
+        input.classList.remove("erro");
+        input.classList.add("inpEmail");
+        setTimeout(()=>{
+        alert("Seu email será enviado daqui a dez minutos!! \nObrigado pela colaboração!");
+        document.querySelector("input").value = "";
+        }, 1000)
     }else{
-        alert("Daqui a 5 minutos iremos mandar sua notificação");
-        input = " hgws";
+        alert("Digite o email corretamente");
+        input.classList.remove("inpEmail");
+        input.classList.add("erro");
     }
+    
 })
         </script>
     </body>

@@ -30,20 +30,24 @@
 
 
         <section>
-                <img src="../img/pacoquinha.jpg" alt="">
+                <img src="../img/Slide3.jpg" alt="Nosso kit-festa">
 
                 <div class="desc">
                 
                 Nosso kit festa é adequado para você que precisa de uns docinhos naquela hora, naquela comunhão, na fraternização em familia, em festas de escola, formaturas ou qualquer tipo de festas, seja em pequeno, médio ou grande porte.
-                  <!--copiar site-->  <a href="#"><button>Contratar</button></a></div>
+                <button id="con">Contratar</button>
+
+                </div>
                 
             
         </section>
 
         <section>
-            <img src="../img/pacoquinha.jpg" alt="">
+            <img src="../img/Slide4.jpg" alt="">
 
-            <div class="desc">É de fora do Brasil, mas tem vontade de experimentar nossos produtos? Conheça nosso serviço de exportação<button id="con">Contratar</button></div>
+            <div class="desc">É de fora do Brasil, mas tem vontade de experimentar nossos produtos? Conheça nosso serviço de exportação
+                <button id="con1">Contratar</button>
+            </div>
         </section>
 
         <footer>
@@ -54,9 +58,16 @@
 
         <script>
             const con = document.querySelector("#con");
-            con.addEventListener("click", ()=>{
+            const con1 = document.querySelector("#con1")
+
+            function servico(){
                 alert("Serviço indisponivel no momento \nObrigado pela compreensão");
-            })
+            }
+
+            con.addEventListener("click", servico);
+            con1.addEventListener("click", servico);
+
+            
         </script>
     </body>
 </html>

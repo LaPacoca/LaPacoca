@@ -75,7 +75,7 @@ header nav #btn{
 }
 
 section{
-    background-color: var(--corLaranja);
+    background-color: var(--corEscura);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -92,7 +92,6 @@ section img{
 section img:hover{
     transform: scale(1.01);
     transition: .4s ease;
-    filter: blur(1px);
     cursor: pointer;
 }
 
@@ -134,7 +133,6 @@ footer{
     align-items: center;
     height: 10vh;
     color: white;
-    position: fixed;
     width: 100%;
     bottom: 0;
 }

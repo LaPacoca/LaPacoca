@@ -210,12 +210,22 @@ section.receber div.content nav ul{
     gap: 1rem;
 }
 
-#inpEmail, #btnReceber {
+.inpEmail {
+    padding: 5px 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: gray;
+}
+
+.erro{
+    border-color: red;
     padding: 5px 10px;
     margin-top: 10px;
     font-size: 16px;
     cursor: pointer;
 }
+
 
 #btnReceber {
     background: var(--corLaranja);
@@ -223,6 +233,10 @@ section.receber div.content nav ul{
     border-radius: 3px;
     color: white;
     transition: .4s;
+    padding: 5px 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 #btnReceber:hover{
